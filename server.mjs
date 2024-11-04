@@ -9,6 +9,7 @@ const port = 3001
 const app = next({dev, hostname, port})
 const handler = app.getRequestHandler()
 
+// room per user, buat notif
 const rooms = []
 
 app.prepare().then(() => {
